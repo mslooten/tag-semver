@@ -1,0 +1,24 @@
+{
+  "name": "tag-semver",
+  "version": "1.0.0",
+  "description": "Easily create a tag/release with a semver version number",
+  "main": "index.js",
+  "scripts": {
+    "tag": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "semver",
+    "release",
+    "version",
+    "node"
+  ],
+  "author": "Marco Slooten",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "inquirer": "^7.0.0",
+    "semver": "^6.3.0",
+    "shelljs": "^0.8.3"
+  }
+}

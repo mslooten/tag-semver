@@ -2,7 +2,6 @@
 
 const chalk = require("chalk");
 const inquirer = require("inquirer");
-const { version } = require("./package.json");
 const shell = require("shelljs");
 const semver = require("semver");
 
@@ -36,7 +35,7 @@ const script = async () => {
 };
 
 const welcome = () => {
-  console.log(chalk.black.bgGreen(`tag-semver v${version} running`));
+  console.log(chalk.black.bgGreen(`tag-semver v1.0.2 running`));
 };
 
 const gitOrQuit = () => {
@@ -70,7 +69,7 @@ const latestTag = async branch => {
 const getOptions = () => {
   const options = {
     branch: "master",
-    prefix: "true"
+    prefix: false
   };
   const availableOptionKeys = ["branch", "prefix"];
   for (let i = 2; i < process.argv.length; i++) {

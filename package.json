@@ -1,7 +1,10 @@
 {
   "name": "tag-semver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easily create a tag/release with a semver version number",
+  "scripts": {
+    "test": "tag-semver"
+  },
   "bin": {
     "tag-semver": "bin/index.js"
   },

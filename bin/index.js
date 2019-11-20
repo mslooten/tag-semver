@@ -51,10 +51,11 @@ const latestTag = async branch => {
   shell.exec(
     `git fetch origin ${branch ? branch : ""} refs/tags/*:refs/tags/* --prune`
   );
-  const tag = shell.exec(
-    `git describe --tag $(git rev-parse --verify refs/remotes/origin/${branch})`,
+  const ref = shell.exec(
+    `git rev-parse --verify refs/remotes/origin/${branch}`,
     { silent: true }
   );
+  const tag = shell.exec(`git describe --tag ${ref}`, { silent: true });
   if (tag.stderr && tag.code !== 128) {
     console.log(chalk.red.italic(`The following error occured:`));
     console.log(chalk.red(tag.stderr));

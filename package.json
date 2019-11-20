@@ -1,9 +1,9 @@
 {
   "name": "tag-semver",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Easily create a tag/release with a semver version number",
   "scripts": {
-    "test": "tag-semver"
+    "release": "tag-semver"
   },
   "bin": {
     "tag-semver": "bin/index.js"
@@ -14,6 +14,9 @@
     "version",
     "node"
   ],
+  "bugs": {
+    "url": "https://github.com/mslooten/tag-semver"
+  },
   "author": "Marco Slooten",
   "license": "MIT",
   "dependencies": {

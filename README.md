@@ -2,7 +2,7 @@
 
 _Easily create a tag/release with a semver version number_
 
-It reads the latest semver tags from a supplied branch (otherwise master) and makes you choose the increment (e.g. major, minor or patch). It will then automatically create a annotated tag for the supplied branch with the new version number.
+It reads the latest semver tags from a supplied branch (otherwise master) and makes you choose the increment (e.g. major, minor or patch). It will then automatically create an annotated tag for the supplied branch with the new version number.
 
 ![GIF demonstrating the use of tag-semver](https://raw.githubusercontent.com/mslooten/tag-semver/master/tag-semver.gif)
 
